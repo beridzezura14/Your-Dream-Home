@@ -131,7 +131,7 @@ nav{
     padding: 0 1rem;
     color: #fafafa;
     text-transform: uppercase;
-    transform: translateY(55%);
+    transform: translateY(35%);
 }
 .main-message h3{
     font-size: 1,7rem;
@@ -206,6 +206,10 @@ nav{
 }
 
 @media screen and (min-width: 400px){
+    nav, .container{
+        max-width: 97%;
+        margin: auto;
+    }
     .hero::before{ 
         height: 7.5rem;
         background: url('../image/wave-small.png');
@@ -215,6 +219,10 @@ nav{
 }
 
 @media screen and (min-width: 750px){
+    nav, .container{
+        max-width: 700px;
+        margin: auto;
+    }
     .logo{    
         height: 60px;
         width: 60px;    
@@ -251,6 +259,7 @@ nav{
 
 }
 
+
 @media screen and (min-width: 1024px){    
     nav, .container{
         max-width: 900px;
@@ -262,7 +271,7 @@ nav{
     }
     .main-message{
         transform: translateY(60%);
-    }
+    }/*
     .main-message h3{
         font-size: 1.5rem;
     }
@@ -270,10 +279,30 @@ nav{
         font-family: 'Aldrich', sans-serif;
         font-size: 4.5rem;
         margin: 1rem 0;
-    }
+    }*/
     .main-message p{
-        font-size: 1.5rem;
-        line-height: 20px;
-        width: 700px;
+
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1500px){
+    nav, .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .main-message{
+        transform: translateY(100%);
+    }
+    .main-message h3{
+        font-size: 2rem;
+    }
+    .main-message h1{
+        font-family: 'Aldrich', sans-serif;
+        font-size: 4.5rem;
+        margin: 1rem 0;
+    }*/
+    .main-message p{
+        font-size: 17px;
+        width: 600px;
     }
 }
