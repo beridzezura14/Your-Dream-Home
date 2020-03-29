@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+}
+p{
+    font-size: 1.6rem;
+}
+.logo{    
+    height: 80px;
+    width: 80px;    
+}
+section{
+    padding: 5rem 0;
+}
+
+
+/*-------------------
+
+   header
+
+--------------------*/
+header{
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.containert{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+nav, .container{
+    max-width: 98%;
+    margin: auto;
+    }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid rgb(119, 86, 48);
+}
+.nav-brand{
+    width: 2rem;
+}
+.menu-icons i{
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+.close i{
+    color: #000000;
+}
+.nav-list{
+    width: 25rem;
+    height: 100vh;
+    background-color: rgb(119, 86, 48);
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+.nav-list.active{
+    right: 0;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+.nav-item{
+    margin: 1.5rem 0 ;
+}
+.nav-link{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+/*-------------------
+
+  section  hero
+
+--------------------*/
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/hero.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.hero::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url('../image/wave-small.png') center no-repeat;
+    background-size: cover;
+}
+.main-message{
+    width: 100%;
+    max-width: 50rem;
+    padding: 0 1rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(55%);
+}
+.main-message h3{
+    font-size: 1,7rem;
+}
+.main-message h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.main-message p{
+    font-size: 1rem;
+    line-height: 16px;
+   /* text-transform: lowercase;*/
+}
+.btn{
+    background-color: rgb(119, 86, 48);
+    border-radius: 2rem;
+    font-size: 14px;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px 11px 20px;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+.btn:hover{
+    background-color: rgb(88, 63, 35);
+}
+
+/*-------------------
+
+  section 2 outdoors experience
+
+--------------------*/
+
+.experience-outdoors{
+    padding: 0;
+    margin: 0 1rem;
+}
+.title-heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, .7);
+}
+.title-heading h3{
+    font-size: 1.4rem;
+}
+.title-heading h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    margin: .5rem 0 1rem;
+}
+.title-heading p{
+    text-transform: lowercase;
+}
+.activities-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+}
+.activities-grid-item{
+    height: 40rem;
+    padding: 4rem;
+    /*color:#fafafa;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media screen and (min-width: 400px){
+    .hero::before{ 
+        height: 7.5rem;
+        background: url('../image/wave-small.png');
+        background-size: cover;
+    }
+    
+}
+
+@media screen and (min-width: 750px){
+    .logo{    
+        height: 60px;
+        width: 60px;    
+    }    
+    .nav-list{
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    top: initial;
+    right: initial;
+    position: initial;
+    flex-direction: row;
+    }
+    .menu-icons{
+        display: none;
+    }
+    .nav-item{
+        padding: 0rem 0rem 0rem 4rem;
+    }
+    .nav-link{
+        font-size: 13px;
+    }
+    .nav-link:hover{
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgb(119, 86, 48);
+        transition: 125ms;
+    }
+    .main-message{
+        transform: translateY(85%);
+    }
+    .hero::before{ 
+        background: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px){    
+    nav, .container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .hero::before{
+        background: none;
+
+    }
+    .main-message{
+        transform: translateY(60%);
+    }
+    .main-message h3{
+        font-size: 1.5rem;
+    }
+    .main-message h1{
+        font-family: 'Aldrich', sans-serif;
+        font-size: 4.5rem;
+        margin: 1rem 0;
+    }
+    .main-message p{
+        font-size: 1.5rem;
+        line-height: 20px;
+        width: 700px;
+    }
+}
