@@ -146,11 +146,84 @@ nav{
     font-size: 1,7rem;
     font-family: bold;
 }
-.main-message h1{
-    font-family: bold;
-    font-size: 3rem;
-    margin: 1rem 0;
+
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+    .block {
+      width: 0%;
+      height: inherit;
+      background: rgb(119, 86, 48);
+      position: absolute;
+      animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+      display: flex;
+    }
+
+    .title h1 {
+      font-family: normal;
+      color: #fff;
+      font-size: 2.2rem;
+      -webkit-animation: mainFadeIn 2s forwards;
+      -o-animation: mainFadeIn 2s forwards;
+      animation: mainFadeIn 2s forwards;
+      animation-delay: 1.6s;
+      opacity: 0;
+      display: flex;
+      align-items: baseline;
+      position: relative;
+    }        
+
+@keyframes mainBlock {
+0% {
+  width: 0%;
+  left: 0;
+
 }
+50% {
+  width: 100%;
+  left: 0;
+
+}
+100% {
+  width: 0;
+  left: 100%;
+}
+}
+
+@keyframes secBlock {
+0% {
+  width: 0%;
+  left: 0;
+
+}
+50% {
+  width: 100%;
+  left: 0;
+
+}
+100% {
+  width: 0;
+  left: 100%;
+}
+}
+
+@keyframes mainFadeIn {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+
 .main-message p{
     font-family: bold;
     font-size: 1rem;
@@ -180,7 +253,7 @@ nav{
 --------------------*/
 
 .experience-outdoors{
-    padding: 0;
+    padding: 5rem 0rem;
     margin: 0 1rem;
 }
 .title-heading{
@@ -194,6 +267,9 @@ nav{
     margin-bottom: 15px;
 }
 
+
+
+
 .title-heading p{
     text-transform: lowercase;
 }
@@ -203,7 +279,7 @@ nav{
     grid-gap: 2.5rem;
 }
 .activities-grid-item{
-    height: 40rem;
+    height: 41rem;
     padding: 4rem;
     /*color:#fafafa;*/
     position: relative;
@@ -212,85 +288,25 @@ nav{
     justify-content: center;
     cursor: pointer;
     z-index: 1;
+    color: #fafafa;
+    line-height: 25px;
+    text-align: justify;
+}
+.activities-grid-item{
+    background:  linear-gradient(rgba(20, 37, 56, 0.93),
+     rgba(0, 0, 0, 0.93)), url("../image/hero.png") center no-repeat;
+}
+.icon{
+    padding-bottom: 7px;
+    font-size: 25px;
+}
+.activities-grid-item h1{
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 
 
-      .title {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 50px;
-      }
-        .block {
-          width: 0%;
-          height: inherit;
-          background: rgb(119, 86, 48);
-          position: absolute;
-          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-          display: flex;
-        }
-  
-        .title h1 {
-          font-family: normal;
-          color: #fff;
-          font-size: 2.2rem;
-          -webkit-animation: mainFadeIn 2s forwards;
-          -o-animation: mainFadeIn 2s forwards;
-          animation: mainFadeIn 2s forwards;
-          animation-delay: 1.6s;
-          opacity: 0;
-          display: flex;
-          align-items: baseline;
-          position: relative;
-        }        
-
-  @keyframes mainBlock {
-    0% {
-      width: 0%;
-      left: 0;
-  
-    }
-    50% {
-      width: 100%;
-      left: 0;
-  
-    }
-    100% {
-      width: 0;
-      left: 100%;
-    }
-  }
-  
-  @keyframes secBlock {
-    0% {
-      width: 0%;
-      left: 0;
-  
-    }
-    50% {
-      width: 100%;
-      left: 0;
-  
-    }
-    100% {
-      width: 0;
-      left: 100%;
-    }
-  }
-  
-  @keyframes mainFadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
 
 
 
@@ -300,27 +316,11 @@ nav{
 
 
 
+/*-------------------
 
+  @media all Devices
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--------------------*/
 
 @media screen and (min-width: 400px){
     nav, .container{
@@ -405,7 +405,10 @@ nav{
         margin-top: 15px;
         margin-bottom: 15px;
 
-      }
+    }
+    .title h1{
+        font-size: 4rem;
+    }
 }
 @media screen and (min-width: 1650px){
     nav, .container{
