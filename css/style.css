@@ -1,3 +1,12 @@
+@font-face {
+	font-family: normal;
+	src:url(../fonts/caps.ttf);
+}
+@font-face {
+	font-family: bold;
+	src:url(../fonts/normal-bold.ttf);
+}
+
 *,
 *::before,
 *::after{
@@ -12,7 +21,6 @@ html{
 }
 a{
     text-decoration: none;
-
 }
 ul{
     list-style: none;
@@ -83,6 +91,7 @@ nav{
     justify-content: center;
     z-index: 1500;
     transition: all 650ms ease-in-out;
+    font-family: normal;
 }
 .nav-list.active{
     right: 0;
@@ -135,18 +144,21 @@ nav{
 }
 .main-message h3{
     font-size: 1,7rem;
+    font-family: bold;
 }
 .main-message h1{
-    font-family: 'Aldrich', sans-serif;
+    font-family: bold;
     font-size: 3rem;
     margin: 1rem 0;
 }
 .main-message p{
+    font-family: bold;
     font-size: 1rem;
     line-height: 16px;
    /* text-transform: lowercase;*/
 }
 .btn{
+    font-family: bold;
     background-color: rgb(119, 86, 48);
     border-radius: 2rem;
     font-size: 14px;
@@ -179,12 +191,9 @@ nav{
 }
 .title-heading h3{
     font-size: 1.4rem;
+    margin-bottom: 15px;
 }
-.title-heading h1{
-    font-family: 'Aldrich', sans-serif;
-    font-size: 2rem;
-    margin: .5rem 0 1rem;
-}
+
 .title-heading p{
     text-transform: lowercase;
 }
@@ -204,6 +213,114 @@ nav{
     cursor: pointer;
     z-index: 1;
 }
+
+
+
+      .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+      }
+        .block {
+          width: 0%;
+          height: inherit;
+          background: rgb(119, 86, 48);
+          position: absolute;
+          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+          display: flex;
+        }
+  
+        .title h1 {
+          font-family: normal;
+          color: #fff;
+          font-size: 2.2rem;
+          -webkit-animation: mainFadeIn 2s forwards;
+          -o-animation: mainFadeIn 2s forwards;
+          animation: mainFadeIn 2s forwards;
+          animation-delay: 1.6s;
+          opacity: 0;
+          display: flex;
+          align-items: baseline;
+          position: relative;
+        }        
+
+  @keyframes mainBlock {
+    0% {
+      width: 0%;
+      left: 0;
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;
+  
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  
+  @keyframes secBlock {
+    0% {
+      width: 0%;
+      left: 0;
+  
+    }
+    50% {
+      width: 100%;
+      left: 0;
+  
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  
+  @keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 400px){
     nav, .container{
@@ -284,14 +401,19 @@ nav{
 
         width: 500px;
     }
+    .title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+      }
 }
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1650px){
     nav, .container{
         max-width: 1000px;
         margin: auto;
     }
     .main-message{
-        transform: translateY(100%);
+        transform: translateY(90%);
     }
     .main-message h3{
         font-size: 2rem;
