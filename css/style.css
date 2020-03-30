@@ -251,71 +251,137 @@ nav{
   section 2 outdoors experience
 
 --------------------*/
-
-.experience-outdoors{
-    padding: 5rem 0rem;
-    margin: 0 1rem;
-}
-.title-heading{
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10rem;
-    color: rgba(0, 0, 0, .7);
-}
-.title-heading h3{
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-
-
-
-.title-heading p{
-    text-transform: lowercase;
-}
-.activities-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
-}
-.activities-grid-item{
-    height: 41rem;
-    padding: 4rem;
-    /*color:#fafafa;*/
-    position: relative;
+.curent-project{
+    max-width: 98%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    font-family: normal;
+}
+.container1{
+    max-width: 300px;
+}
+.project-head h1{
+    padding: 5rem 0;
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
     cursor: pointer;
-    z-index: 1;
-    color: #fafafa;
-    line-height: 25px;
-    text-align: justify;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  /*.text {
+    color: #f2f2f2;
+    background-color: chocolate;
+    display: block;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }*/
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    background-color: rgb(119, 86, 48);
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 5px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(119, 86, 48);
+    border-radius: 10%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgb(100, 48, 0);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+.project-descriptin{
+    margin: 2rem 1rem;
 }
-.activities-grid-item{
-    background:  linear-gradient(rgba(20, 37, 56, 0.93),
-     rgba(0, 0, 0, 0.93)), url("../image/hero.png") center no-repeat;
+.project-descriptin h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
 }
-.icon{
-    padding-bottom: 7px;
-    font-size: 25px;
+.project-descriptin h4{
+    font-size: 2.3rem;
+    padding: 1rem 0;
 }
-.activities-grid-item h1{
-    padding-bottom: 20px;
-    font-size: 20px;
+.project-descriptin ul{
+    font-size: 1.8rem;
+    list-style-type: initial;
+    padding-left: 13px;
+    line-height: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------
 
   @media all Devices
@@ -374,6 +440,7 @@ nav{
         background: none;
     }
 
+
 }
 
 
@@ -409,6 +476,57 @@ nav{
     .title h1{
         font-size: 4rem;
     }
+
+    .curent-project{
+        max-width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-containet{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .slideshow-container {
+        max-width: 700px;
+        margin-right: 50px;
+    }
+    .container1{
+        max-width: 500px;
+    }
+    .project-head h1{
+        text-align: center;
+        padding: 5rem 0;
+        font-size: 2.5rem;
+        color: black;
+    }
+    
+    .project-descriptin{
+        margin: 0 1rem;
+    }
+    .project-descriptin h3{
+        font-size: 1.7rem;
+        
+    }
+    .project-descriptin h4{
+        font-size: 1.6rem;
+        
+    }
+    .project-descriptin ul{
+        font-size: 1.5rem;
+        
+    }
+
+
+
+
+
+
+
+
+
 }
 @media screen and (min-width: 1650px){
     nav, .container{
