@@ -119,7 +119,7 @@ nav{
 .hero{
     width: 100%;
     height: 80vh;
-    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/hero.png") center no-repeat;
+    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/4.jpg") center no-repeat;
     background-size: cover;
     position: relative;
 
@@ -351,7 +351,7 @@ nav{
   }
   
   .active, .dot:hover {
-    background-color: rgb(100, 48, 0);
+    background-color: rgb(119, 86, 48);
   }
   
   /* Fading animation */
@@ -404,6 +404,7 @@ nav{
 --------------------*/
 .project{
     margin-top: 4rem;
+    padding: 4rem 0;
     background-color: rgb(238, 238, 238);
 }
 .pro img{
@@ -446,7 +447,7 @@ nav{
         background-size: cover;
     }
     .main-message{
-        transform: translateY(70%);
+        transform: translateY(95%);
     }
     
 }
@@ -522,7 +523,7 @@ nav{
 
     }
     .main-message{
-        transform: translateY(60%);
+        transform: translateY(85%);
     }/*
     .main-message h3{
         font-size: 1.5rem;
@@ -664,7 +665,7 @@ nav{
     .main-message p{
         font-size: 17px;
         width: 600px;
-        line-height: 20px;
+        line-height: 24px;
     }
     .all-project{
         max-width: 1600px;
