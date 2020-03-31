@@ -15,9 +15,9 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Nunito', sans-serif;
     font-size: 10px;
     box-sizing: border-box;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
@@ -32,8 +32,8 @@ p{
     height: 80px;
     width: 80px;    
 }
-section{
-    padding: 5rem 0;
+h1, h2, h3, h4{
+    font-family: normal;
 }
 
 
@@ -140,7 +140,7 @@ nav{
     padding: 0 1rem;
     color: #fafafa;
     text-transform: uppercase;
-    transform: translateY(35%);
+    transform: translateY(70%);
 }
 .main-message h3{
     font-size: 1,7rem;
@@ -248,7 +248,7 @@ nav{
 
 /*-------------------
 
-  section 2 outdoors experience
+  section 2 curent project
 
 --------------------*/
 .curent-project{
@@ -261,12 +261,25 @@ nav{
 .container1{
     max-width: 300px;
 }
+.project-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .project-head h1{
-    padding: 5rem 0;
+    text-align: center;
+    padding: 1rem 0;
     font-size: 2.5rem;
     color: black;
+    
 }
-
+.head-line{    
+    margin: 2rem 0;
+    height: 2px;
+    width: 20rem;   
+    background-color: rgb(119, 86, 48);
+}
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -322,6 +335,7 @@ nav{
     background-color: rgb(119, 86, 48);
     position: absolute;
     top: 0;
+    z-index: 111;
   }
   
   /* The dots/bullets/indicators */
@@ -346,8 +360,9 @@ nav{
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    overflow: hidden;
   }
-  
+    
   @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -363,25 +378,57 @@ nav{
     .prev, .next,.text {font-size: 11px}
   }
 
-
-
 .project-descriptin{
-    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+    
 }
 .project-descriptin h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 1rem 0;
 }
 .project-descriptin h4{
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
 }
 .project-descriptin ul{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     list-style-type: initial;
     padding-left: 13px;
     line-height: 30px;
 }
+
+/*-------------------
+
+  section 2 all project
+
+--------------------*/
+.project{
+    margin-top: 4rem;
+    background-color: rgb(238, 238, 238);
+}
+.pro img{
+    width: 100%;
+    z-index: -1;
+}
+.pro h4{
+    width: 100%;
+    background:linear-gradient(30deg,#ffffff00 30%,rgb(119, 86, 48) 30.3%);
+    text-align: right;
+    color: white;
+    font-size: 1rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: -4px;
+    margin-bottom: 1.5rem;
+}
+.img-top{
+    display: none;
+}
+
+
+
+
 /*-------------------
 
   @media all Devices
@@ -397,6 +444,9 @@ nav{
         height: 7.5rem;
         background: url('../image/wave-small.png');
         background-size: cover;
+    }
+    .main-message{
+        transform: translateY(70%);
     }
     
 }
@@ -438,6 +488,24 @@ nav{
     }
     .hero::before{ 
         background: none;
+    }
+    .ready-project{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .project{
+        margin: 4rem 0;
+        padding: 3rem 0;
+    }
+
+    .pro img{
+        width: 350px;
+    }
+    .pro h4{       
+        font-size: 1.5rem;
+        
     }
 
 
@@ -496,15 +564,29 @@ nav{
     .container1{
         max-width: 500px;
     }
+    .project-head{
+        flex-direction: row;
+    }
     .project-head h1{
         text-align: center;
-        padding: 5rem 0;
+        padding: 5rem 3rem;
         font-size: 2.5rem;
         color: black;
     }
-    
+    .fade img{
+        opacity: 0.9;
+        cursor: pointer;
+        transform: scale(1.15);
+        transition: transform 0.5s, opacity 0.3s;
+        
+    }
+    .fade img:hover{
+      opacity: 1;
+      transform: scale(1.03)
+    }
     .project-descriptin{
-        margin: 0 1rem;
+        margin: 0rem 1rem;
+        padding: -20px 0;
     }
     .project-descriptin h3{
         font-size: 1.7rem;
@@ -518,6 +600,35 @@ nav{
         font-size: 1.5rem;
         
     }
+    
+    .all-project{
+        max-width: 1300px;
+        margin: auto;
+        
+    }
+    .pro{        
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        transition: 900ms ease;
+    }
+    .pro img{
+        width: 550px;
+    }
+    .pro img:hover{
+        border-radius: 3px;
+    }    
+    .pro .img-top {
+        display: none;
+        position: absolute;        
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .pro:hover .img-top {
+        display: inline;
+        transform: 900ms ease-in;
+    }
 
 
 
@@ -525,6 +636,12 @@ nav{
 
 
 
+
+
+
+    .pro h4{       
+        font-size: 2rem;
+    }
 
 
 }
@@ -540,12 +657,21 @@ nav{
         font-size: 2rem;
     }
     .main-message h1{
-        font-family: 'Aldrich', sans-serif;
-        font-size: 4.5rem;
+        font-size: 4.1rem;
         margin: 1rem 0;
-    }*/
+        ;
+    }
     .main-message p{
         font-size: 17px;
         width: 600px;
+        line-height: 20px;
     }
+    .all-project{
+        max-width: 1600px;
+        margin: auto;
+    }
+    .pro img{
+        width: 750px;
+    }
+    
 }
