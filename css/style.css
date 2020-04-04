@@ -154,7 +154,7 @@ nav{
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(107, 77, 42);
+  background-color: rgb(95, 68, 37);
 }
 
 .dropdown:hover .dropdown-content {
@@ -525,7 +525,7 @@ nav{
   section 5 contact
 
 --------------------*/
-.contact-info{
+.contact-information{
     background-color: rgb(207, 162, 107);
 }
 
