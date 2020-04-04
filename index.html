@@ -3,7 +3,8 @@
 <head>
     <title>მთავარი &mdash; Home</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -11,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
   <header>
     <div class="container">
       <nav>
@@ -32,9 +32,22 @@
           <li class="nav-item">
             <a href="#" class="nav-link">მთავარი</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">პროექტები</a>
+
+
+          <li class="nav-item dropdown">
+            <a href="projects.html" class="nav-link"><button class="dropbtn">არქიტექტურა 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div></a>
           </li>
+
+
+
+          
           <li class="nav-item">
             <a href="#" class="nav-link">კონტაქტი</a>
           </li>
@@ -70,7 +83,6 @@
         </div>
     </section>
   </main> 
-
   <section class="curent-project">
     <div class="project-head">
       <div class="head-line"></div>
@@ -95,7 +107,7 @@
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 5</div>
-          <img  class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt1/3.jpg" style="width:100%">ss
+          <img  class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt1/3.jpg" style="width:100%">
          <!--<div class="text">1</div>-->
         </div>
         <div class="mySlides fade">
@@ -116,11 +128,11 @@
         <br>
 
         <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span> 
-          <span class="dot" onclick="currentSlide(5)"></span>  
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
       </div>       
       <div class="project-descriptin">
@@ -149,31 +161,43 @@
   </div>
   <div class="all-project">
     <div class="ready-project">
-        <a href="#">
+        <a href="project-1.html">
           <li class="pro">
             <img class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt2/1.jpg" alt="project 1">
-            <img src="image/projeqt2/8.jpg" class="img-top" alt="">
+            <div class="middle">
+              <div class="text">მეტი</i></div>
+            </div>
+            <!--<img src="image/projeqt2/8.jpg" class="img-top" alt="">-->
             <h4> პროექტი 1 </h4>
           </li>
         </a>
         <a href="#">
           <li class="pro">
             <img class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt3/1.jpg" alt="project 1">
-            <img src="image/projeqt3/2.jpg" class="img-top" alt="">
+            <div class="middle">
+              <div class="text">მეტი</i></div>
+            </div>
+            <!--<img src="image/projeqt3/2.jpg" class="img-top" alt="">-->
             <h4> პროექტი 2 </h4>
           </li>
         </a>
         <a href="#">
           <li class="pro">
             <img class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt1/1.jpg" alt="project 1">
-            <img src="image/projeqt1/2.jpg" class="img-top" alt="">
+            <div class="middle">
+              <div class="text">მეტი</i></div>
+            </div>
+            <!--<img src="image/projeqt1/2.jpg" class="img-top" alt="">-->
             <h4> პროექტი 3 </h4>
           </li>
         </a>
         <a href="#">
           <li class="pro">
-            <img class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt2/2.jpg" alt="project 1">
-            <img src="image/projeqt2/3.jpg" class="img-top" alt="">
+            <img class="lazy" src="image/projeqt1/1.jpg" data-src="image/projeqt1/5.jpg" alt="project 1">
+            <div class="middle">
+              <div class="text">მეტი</i></div>
+            </div>
+            <!--<img src="image/projeqt2/3.jpg" class="img-top" alt="">-->
             <h4> პროექტი 4 </h4>
           </li>
         </a>
