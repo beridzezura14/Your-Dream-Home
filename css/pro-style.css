@@ -56,7 +56,7 @@ h1, h2, h3, h4{
     text-align: center;
     padding-top: 25vh;
     color: blanchedalmond;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .section-all-project{
@@ -158,6 +158,9 @@ h1, h2, h3, h4{
     text-decoration: underline;
 }
 @media screen and (min-width: 724px){
+    .pro-head h1{
+        font-size: 3rem;
+    }
     .lazy-show{
         width: 400px;
     }

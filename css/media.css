@@ -43,10 +43,8 @@
     .nav-link{
         font-size: 13px;
     }
-    .nav-link:hover{
-        padding-bottom: 5px;
-        border-bottom: 2px solid rgb(119, 86, 48);
-        transition: 125ms;
+    .dropdown .dropbtn {
+        font-size: 13px;
     }
     .main-message{
         transform: translateY(85%);
