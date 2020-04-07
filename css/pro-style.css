@@ -115,6 +115,7 @@ h1, h2, h3, h4{
     bottom: 0;
     height: 100%;
 }
+
   
 .text-2 {
     font-family: normal;
@@ -159,6 +160,21 @@ h1, h2, h3, h4{
 }
 .active-number{
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 3rem;
 }
 @media screen and (min-width: 724px){
     .pro-head h1{

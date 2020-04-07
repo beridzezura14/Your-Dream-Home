@@ -3,6 +3,16 @@
   @media all Devices
 
 --------------------*/
+@media screen and (min-width: 300px){
+    .story{
+        background: linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), 
+        url("../image/projeqt2/4.jpg") center no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
+    }   
+}
 
 @media screen and (min-width: 400px){
     nav, .container{
@@ -11,6 +21,14 @@
     }
     .main-message{
         transform: translateY(95%);
+    }
+    .story{
+        background: linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), 
+        url("../image/projeqt2/4.jpg") center no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    
     }
 
     
@@ -181,7 +199,7 @@
     }
     .fade img:hover{
       opacity: 1;
-      transform: scale(1.03)
+      transform: scale(1.3)
     }
     .project-descriptin{
         margin: 0rem 1rem 0 3rem;
@@ -277,6 +295,13 @@
         transform: 900ms ease-in;
     }*/
 
+    .story{
+        background: linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), 
+        url("../image/projeqt2/4.jpg") center no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
     .section-story{
         padding: 2rem 0;
         
@@ -342,7 +367,125 @@
     .pro h4{       
         font-size: 2rem;
     }
+    .home-plan{
+        margin: 6rem 0;
+        display: flex !important;
+        flex-direction: row !important;
+      }
+      .home-2{
+          margin-left: 50px;
+      }
+      .living{
+        height: 500px;
+        width: 300px;
+      }
+      
+      .enter{
+        height: 100px;
+        width: 300px;
+        margin-top: -11px;
+      }
+      .badroom-1{
+        width: 250px;
+        height: 250px;
+        margin-top: -6px;
+      }
+      .bathroom{
+        width: 250px;
+        height: 120px;
+        margin-top: -5px;
+      }
+      .badroom-2{
+        width: 250px;
+        height: 150px;
+        margin-top: -5px;
+      }
+      .kibe{
+        width: 250px;
+        height: 75px;  
+        margin-top: -5px;
+      }
+
 }
+
+@media screen and (min-width: 1510px){
+
+
+.room-description div{
+    display: inline-block;
+  }
+
+.room-description {
+    position: relative;
+  }
+  
+  .living-hover, .enter-hover, .badroom-1-hover, 
+  .bathroom-hover, .badroom-2-hover{
+    position: absolute; 
+    background: rgb(119, 86, 48); /* Black see-through */
+    color: #f1f1f1; 
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: normal;
+    line-height: 30px;
+    z-index: 1111111;
+  }
+  
+  .living, .enter, .badroom-1, .bathroom, .badroom-2 {
+    display: block;
+    cursor: pointer;
+  }
+  
+  
+  .living-hover{  
+    bottom: 12px; 
+    left:-150px; 
+  }
+  .room-description:hover .living-hover{
+    opacity: 1;
+  }
+  
+  
+  .enter-hover{ 
+    bottom: 0;  
+    left:-150px; 
+  }
+  .room-description:hover .enter-hover{
+    opacity: 1;
+  }
+  
+  
+  .badroom-1-hover{
+    top: 23px; 
+    right: -183px;
+  }
+  .room-description:hover .badroom-1-hover{
+    opacity: 1;
+  }
+  
+  
+  .bathroom-hover{
+    top: -10px; 
+    right: -143px;
+  }
+  .room-description:hover .bathroom-hover{
+    opacity: 1;
+  }
+  
+  
+  .badroom-2-hover{
+    top: 0px; 
+    right: -183px;
+  }
+  .room-description:hover .badroom-2-hover{
+    opacity: 1;
+  }
+ 
+}  
 @media screen and (min-width: 1650px){
     nav, .container{
         max-width: 1000px;

@@ -36,6 +36,64 @@ h1, h2, h3, h4{
     font-family: normal;
 }
 
+.next-picture{
+    padding: 6rem 0rem;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.next-pic{
+    margin-right: 2rem;
+}
+.next-pic a{
+    font-size: 1.7rem;
+    padding: 20px 20px;
+    border:1px solid rgb(207, 162, 107);
+    color: rgb(207, 162, 107);
+}
+.next-pic a i span, .next-pic a span {
+    font-family: normal;
+    padding-left: 5px;
+    padding-right: 5px;
 
+}
+.next-pic a:first-child{
+    margin-right: -4px;
+}
+.next-pic-image img{
+    width: 320px;
+    height: auto;
+}
+
+
+@media screen and (min-width: 724px){
+    .pro-head h1{
+        font-size: 3rem;
+    }
+    .lazy-show{
+        width: 400px;
+    }
+    .next-pic a{
+    font-size: 1.7rem;
+    padding: 50px 50px;
+    border:1px solid rgb(207, 162, 107);
+    color: rgb(207, 162, 107);
+    }
+}
+@media screen and (min-width: 1024px){
+    .all-project-img{
+        margin-bottom: 50px;
+    }
+    .container-2:hover .overlay {
+        display: inline-block;      
+    }
+    .lazy-show {
+        width: 320px;
+        margin-bottom: 0px;
+    }
+    
+}
 
 
