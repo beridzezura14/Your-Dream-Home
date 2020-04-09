@@ -271,8 +271,8 @@
         font-family: normal;
         background-color: lavenderblush;    
         color: rgb(119, 86, 48);
-        font-size: 2rem;
-        padding: 16px 40px;
+        font-size: 1.5rem;
+        padding: 16px 30px;
         margin-top: -25px;
         border-top-left-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -325,6 +325,19 @@
     }
 
 
+    .about-us{
+        max-width: 50%;
+        margin: auto;
+        padding-bottom: 5rem;
+      }
+      .about-us{
+        font-family: bold;
+        text-align: center;
+      }
+      .about-us p{
+        font-size: 15px;
+        line-height: 22px;
+      }
 
 
     .section-gallery{

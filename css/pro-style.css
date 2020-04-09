@@ -108,6 +108,7 @@ h1, h2, h3, h4{
     overflow: hidden;   
     height: 0;
     transition: .5s ease;
+    
 }
   
 .container-2:hover .overlay {
