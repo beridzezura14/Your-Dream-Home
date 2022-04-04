@@ -20,7 +20,7 @@
         margin: auto;
     }
     .main-message{
-        transform: translateY(25%);
+        transform: translateY(95%);
     }
     .story{
         background: linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), 
@@ -35,7 +35,6 @@
 }
 
 @media screen and (min-width: 750px){
-    
     nav, .container{
         max-width: 700px;
         margin: auto;
@@ -61,13 +60,12 @@
     }
     .nav-link{
         font-size: 13px;
-        margin: 2rem 0;
     }
     .dropdown .dropbtn {
         font-size: 13px;
     }
     .main-message{
-        transform: translateY(15%);
+        transform: translateY(85%);
     }
     .hero::before{ 
         background: none;
@@ -99,12 +97,33 @@
         padding-bottom: 3rem;
         
     }
-    .main-message p{
-        font-size: 17px;
-        width: 600px;
-        line-height:25px;
-    }
 
+    .story-des li h3{
+        font-size: 2rem;
+    }
+    .story-des li p{
+        width: 500px;
+    }
+    .contact p{
+        font-size: 5rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;        
+    }
+    .footer-icon i{
+        padding: 0 15px;
+        font-size: 2.5rem;
+    }
+    .footer-icon i:hover{
+        color: burlywood;
+        transform: 300ms;
+    }
+    .footer p{
+        font-family: normal;
+    }
 
 }
 
@@ -119,7 +138,7 @@
 
     }
     .main-message{
-        transform: translateY(50%);
+        transform: translateY(100%);
     }/*
     .main-message h3{
         font-size: 1.5rem;
@@ -204,6 +223,7 @@
   
   --------------------*/
     .main-message p{
+
         width: 500px;
     }
     .title {
@@ -212,7 +232,7 @@
 
     }
     .title h1{
-        font-size: 2.7rem;
+        font-size: 4rem;
     }
 
     .curent-project{
@@ -442,7 +462,7 @@
     .main-message p{
         font-size: 17px;
         width: 600px;
-        line-height:28px;
+        line-height: 24px;
     }
     .all-project{
         max-width: 1600px;

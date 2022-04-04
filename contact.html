@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ანა &mdash; ANA</title>
+    <title>პროექტები &mdash; projects</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,11 +20,12 @@
       <nav>
         <div class="nav-brand">
           <a href="index.html">
-            
+            <img class="logo" src="image/logo.png" alt="logo">
           </a>
         </div>
         <div class="menu-icons open">
-          <a href="index.html" class="nav-link">მთავარი</a>
+          <i class="icon ion-md-menu">
+          </i>
         </div>
         <ul class="nav-list">
           <div class="menu-icons close">
@@ -36,7 +37,13 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">გალერია</a>
+            <a href="projects.html" class="nav-link">არქიტექტურა</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">მშენებლობა</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">კონტაქტი</a>
           </li>
           
         </ul>
@@ -46,27 +53,70 @@
   <main>
     <section class="hero">  
                 <div class="pro-head">                   
-                    <h1>გალერია</h1>
+                    <h1>საკონტაქტო</h1>
                 </div>
             </div>       
         </div>  
     </section>
   </main>
-  <section class="gallery">
-    <div class="mygallery">
-      
-      <h2 class="contin">მმმ... საერთო ფოტო არ გვაქვს :დდდ</h2>
-
+  <div class="subproject">
+    <div>
+        <h2 class="subtitle"><a href="index.html">მთავარი</a> 
+            <i class="fas fa-angle-right" style="font-size: 17px; color: chocolate;"></i> კონტაქტი
     </div>
+  </div>
+  <section class="contact-space">
+      <div class="contact-info">
+          <li><i class="fas fa-mobile"></i> 555 11 22 33</li>
+          <li><i class="fas fa-envelope-open-text"></i> saxlisheni@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> მისამართი 2</li>
+      </div>
+      <div class="contact-icon">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-behance-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+       </div> 
   </section>
+    <div class="container-3">
+   <form action="/action_page.php">
+    <label for="fname">სახელი</label>
+    <input type="text" id="name" name="Name" placeholder="Your name..">
 
-  <section class="cont">
-    <h1>გაგრძელება ინება ?!</h1> 
+    <label for="lname">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+    <label for="subject">თემა</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+  
+<section>
+      <div>
+        <div class="map">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.042350065777!2d44.777403465750936!3d41.71960498329618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d65e29f14b%3A0x5314c1881de74fd5!2z4YOh4YOQ4YOR4YOj4YOg4YOX4YOQ4YOa4YOdLCDhg5fhg5Hhg5jhg5rhg5jhg6Hhg5g!5e0!3m2!1ska!2sge!4v1550580551130"  
+            frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      </div>
   </section>
+  <footer>
+    <div class="footer">
+      <p>created by <span><a class="me" href="https://www.facebook.com/zura.beridze.metqi">zura beridze</a></span></p>
+      <div class="footer-icon">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-behance-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+      <p> All Right Reserved 2020</p>
+    </div>
+  </footer>
 
 
-  <section class="back">
-    <a href="index.html"> უკან  </a>
-  </section>
+  
+
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

@@ -32,9 +32,8 @@ p{
     height: 80px;
     width: 80px;    
 }
-h1, h2, h3, h4, .nav-link{
+h1, h2, h3, h4{
     font-family: normal;
-
 }
 
 
@@ -60,15 +59,13 @@ header{
 nav, .container{
     max-width: 98%;
     margin: auto;
-
-    
     }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
-    border-bottom: 1px solid rgb(42, 129, 50);
+    border-bottom: 1px solid rgb(119, 86, 48);
 }
 .nav-brand{
     width: 2rem;
@@ -119,6 +116,11 @@ nav{
   color: burlywood;
   
 }
+
+
+
+
+
 /*-------------------
 
   section  hero
@@ -127,18 +129,10 @@ nav{
 
 .hero{
     width: 100%;
-    height: 100vh;
-    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/1234.jpg") center no-repeat;
+    height: 80vh;
+    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/4.jpg") center no-repeat;
     background-size: cover;
     position: relative;
-
-}
-
-.hero-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .main-message{
@@ -147,7 +141,7 @@ nav{
     padding: 0 1rem;
     color: #fafafa;
     text-transform: uppercase;
-    transform: translateY(20%);
+    transform: translateY(70%);
 }
 .main-message h3{
     font-size: 1,7rem;
@@ -167,18 +161,16 @@ nav{
     .block {
       width: 0%;
       height: inherit;
-      background:rgb(42, 129, 50);
+      background: rgb(119, 86, 48);
       position: absolute;
       animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
       display: flex;
     }
 
     .title h1 {
-      line-height: 35px;
-      text-align: center;
       font-family: normal;
       color: #fff;
-      font-size: 2rem;
+      font-size: 2.2rem;
       -webkit-animation: mainFadeIn 2s forwards;
       -o-animation: mainFadeIn 2s forwards;
       animation: mainFadeIn 2s forwards;
@@ -187,8 +179,7 @@ nav{
       display: flex;
       align-items: baseline;
       position: relative;
-    }  
-          
+    }        
 
 @keyframes mainBlock {
 0% {
@@ -236,13 +227,13 @@ nav{
 
 .main-message p{
     font-family: bold;
-    font-size: 1.8rem;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 16px;
    /* text-transform: lowercase;*/
 }
 .btn{
     font-family: bold;
-    background-color: rgb(42, 129, 50);
+    background-color: rgb(119, 86, 48);
     border-radius: 2rem;
     font-size: 14px;
     color: #fafafa;
@@ -253,18 +244,10 @@ nav{
     transition: background-color 650ms;
 }
 .btn:hover{
-    background-color:  rgb(21, 70, 26);
+    background-color: rgb(88, 63, 35);
 }
 
-.contin{
-  text-align: center;
-  width: 100%;
-  margin: 10rem 0;
-  
-}
-.cont{
-  margin: 10rem 0 0 0;
-}
+
 
 /*-------------------
 
@@ -272,4 +255,417 @@ nav{
 
 --------------------*/
 
+.about{
+  margin: 5rem 0.5rem 0 0.5rem;
+  padding: 2rem 1rem;
+  border: 1px solid rgb(119, 86, 48);
+  border-radius: 15px;
+  background-color:none;
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 
+.about-us h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about-us p{
+  text-align: center;
+  max-width: 95%;
+  margin: auto;
+}
+/*   services   */
+
+.services{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 5rem 0 5rem 0;
+  margin: 0 0.5rem 5rem 0.5rem;
+  background-color: rgb(230, 228, 228);
+}
+.services h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.services-column{
+  max-width: 250px;
+  margin: auto;
+  font-size: 1.7rem;
+  line-height: 29px;
+}
+.services-column li i{
+  color: rgb(119, 86, 48);
+}
+
+/*-------------------
+
+   END section about us & sevices
+
+--------------------*/
+
+
+/*-------------------
+
+  section 2 curent project
+
+--------------------*/
+.curent-project{
+    max-width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: bold;
+}
+.container1{
+    max-width: 300px;
+}
+.project-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-head h1{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: black;
+    
+}
+.head-line{    
+    margin: 2rem 0;
+    height: 2px;
+    width: 20rem;   
+    background-color: rgb(119, 86, 48);
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }*/
+  
+  /* Caption text */
+  /*.text {
+    color: #f2f2f2;
+    background-color: chocolate;
+    display: block;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }*/
+  .fade img{
+   
+    transform: scale(1.85);
+    
+    
+}
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    background-color: rgb(119, 86, 48);
+    position: absolute;
+    top: 0;
+    z-index: 111111;
+  }
+  
+ 
+  .dot {
+    cursor: pointer;
+    height: 5px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(0, 0, 0);
+    
+    border-radius: 10%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgb(128, 95, 56);
+    border: 3px solid rgb(128, 95, 56);
+  
+  }
+  
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+.project-descriptin{
+    padding: 2rem 1rem;
+    
+}
+.project-descriptin h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.project-descriptin h4{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+.project-descriptin ul{
+    font-size: 1.5rem;
+    list-style-type: initial;
+    padding-left: 13px;
+    line-height: 30px;
+    color: rgb(105, 105, 105);
+}
+
+/*-------------------
+
+  section 3 all project
+
+--------------------*/
+/*
+.project{
+    margin-top: 4rem;
+    padding: 4rem 0;
+    background-color: rgb(238, 238, 238);
+}
+.pro img{
+    width: 100%;
+}
+.pro h4{
+    width: 100%;
+    background:linear-gradient(30deg,#ffffff00 30%,rgb(119, 86, 48) 30.3%);
+    text-align: right;
+    color: white;
+    font-size: 1rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: -4px;
+    margin-bottom: 1.5rem;
+}
+.middle{
+  display: none;
+}
+.img-top{
+    display: none;
+}*/
+/*-------------------
+
+  section 3 home plan*
+
+
+
+/*-------------------
+
+  section 4 story*
+
+--------------------*/
+
+.story{
+    position: relative;
+    background: linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), 
+    url("../image/projeqt2/4.jpg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.section-story{
+    padding: 6rem 0;
+    max-width: 95%;
+    margin: auto;
+    color: blanchedalmond;
+    text-align: center;
+}
+.story-head h1{
+    font-size: 2.5rem;
+    color: blanchedalmond;
+}
+.fa-users, .fa-clock, .fa-handshake{
+    font-size: 80px;
+    padding-bottom: 30px;
+    color: rgb(207, 162, 107);
+}
+.story-des li{
+    padding: 3rem 0;
+    line-height: 25px;
+}
+.story-des div h1{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.story-des li h3{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.story-des li p{
+    font-family: normal;
+    font-size: 14px;
+}
+/*-------------------
+
+  section 5 contact
+
+--------------------*/
+
+
+/*-------------------
+
+  section about us
+
+--------------------*/
+
+/*-------------------
+
+  section 6 gallery
+
+--------------------*/
+.gallery-showcase{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-showcase li{
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.hause-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+.hause-photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.3s;
+}
+.hause-photo img:hover{
+  opacity: 1;
+  transform: scale(1.03)
+}
+
+/*-------------------
+
+  section 7 footer
+
+--------------------*/
+
+footer{
+    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93));
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    color: blanchedalmond;
+    
+}
+.footer-icon{
+    padding: 4rem 0;
+}
+.footer-icon i{
+    padding: 0 10px;
+    font-size: 2rem;
+    color:blanchedalmond;
+}
+.footer p{
+    font-family: normal;
+    font-size: 1rem;
+}
+.me{
+    color: rgb(207, 162, 107);
+}
+
+
+#page-wrap {
+  margin: auto;
+  max-width: 800px;
+  padding: 50px;
+}
+h1 {
+  font-size: 30px;
+}
+
+#back2Top {
+  width: 40px;
+  line-height: 50px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+ border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+#back2Top{
+  background-color: rgb(119, 86, 48);
+  color: #fafafa;
+}
+#back2Top:hover {
+  background-color:#f2f2f2;
+  color: rgb(119, 86, 48);
+}
