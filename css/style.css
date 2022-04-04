@@ -32,8 +32,9 @@ p{
     height: 80px;
     width: 80px;    
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, .nav-link{
     font-family: normal;
+
 }
 
 
@@ -127,7 +128,7 @@ nav{
 .hero{
     width: 100%;
     height: 100vh;
-    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/4.jpg") center no-repeat;
+    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/1234.jpg") center no-repeat;
     background-size: cover;
     position: relative;
 
@@ -173,7 +174,8 @@ nav{
     }
 
     .title h1 {
-      line-height: 30px;
+      line-height: 35px;
+      text-align: center;
       font-family: normal;
       color: #fff;
       font-size: 2rem;
@@ -254,7 +256,15 @@ nav{
     background-color:  rgb(21, 70, 26);
 }
 
-
+.contin{
+  text-align: center;
+  width: 100%;
+  margin: 10rem 0;
+  
+}
+.cont{
+  margin: 10rem 0 0 0;
+}
 
 /*-------------------
 
