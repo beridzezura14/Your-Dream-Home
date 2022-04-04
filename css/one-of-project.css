@@ -37,6 +37,7 @@ h1, h2, h3, h4{
 }
 
 .next-picture{
+    
     padding: 6rem 0rem;
     max-width: 900px;
     margin: auto;
@@ -45,6 +46,7 @@ h1, h2, h3, h4{
     align-items: center;
 }
 .next-pic{
+    margin-top: 2rem;
     margin-right: 2rem;
 }
 .next-pic a{
@@ -67,7 +69,13 @@ h1, h2, h3, h4{
     height: auto;
 }
 
-
+.small-img{
+    margin-left: -60px;
+    height: 70px;
+    width: 120px;
+    display: none;
+    
+}
 @media screen and (min-width: 724px){
     .pro-head h1{
         font-size: 3rem;
@@ -81,6 +89,7 @@ h1, h2, h3, h4{
     border:1px solid rgb(207, 162, 107);
     color: rgb(207, 162, 107);
     }
+    
 }
 @media screen and (min-width: 1024px){
     .all-project-img{
@@ -92,6 +101,15 @@ h1, h2, h3, h4{
     .lazy-show {
         width: 320px;
         margin-bottom: 0px;
+    }
+    .small-img{
+        height: 60px;
+        width: 100px;
+        display: inline-block;
+        
+    }
+    .dot {
+        margin: 10px 50px;
     }
     
 }

@@ -59,13 +59,15 @@ header{
 nav, .container{
     max-width: 98%;
     margin: auto;
+
+    
     }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
-    border-bottom: 1px solid rgb(119, 86, 48);
+    border-bottom: 1px solid rgb(42, 129, 50);
 }
 .nav-brand{
     width: 2rem;
@@ -110,64 +112,12 @@ nav{
     font-size: 15px;
     text-transform: uppercase;
     color: #fafafa;
+    transition: 0.3s;
 }
-
-/*    dropdown    */
-
-
-.dropdown {
-  float: left;
-  overflow: hidden;
+.nav-link:hover{
+  color: burlywood;
+  
 }
-
-.dropdown .dropbtn {
-  font-size: 15px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10px 0;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  cursor: pointer;
-}
-
-
-.dropdown-content {
-  margin-left: -30px;
-  line-height: 20px;
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  background-color: rgb(105, 78, 47);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1111111111;
-}
-
-.dropdown-content a {
-  float: none;
-  color: blanchedalmond;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(95, 68, 37);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-/*    dropdown    */
-
-
-
-
-
 /*-------------------
 
   section  hero
@@ -176,10 +126,18 @@ nav{
 
 .hero{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/4.jpg") center no-repeat;
     background-size: cover;
     position: relative;
+
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .main-message{
@@ -188,7 +146,7 @@ nav{
     padding: 0 1rem;
     color: #fafafa;
     text-transform: uppercase;
-    transform: translateY(80%);
+    transform: translateY(20%);
 }
 .main-message h3{
     font-size: 1,7rem;
@@ -208,16 +166,17 @@ nav{
     .block {
       width: 0%;
       height: inherit;
-      background: rgb(119, 86, 48);
+      background:rgb(42, 129, 50);
       position: absolute;
       animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
       display: flex;
     }
 
     .title h1 {
+      line-height: 30px;
       font-family: normal;
       color: #fff;
-      font-size: 2.2rem;
+      font-size: 2rem;
       -webkit-animation: mainFadeIn 2s forwards;
       -o-animation: mainFadeIn 2s forwards;
       animation: mainFadeIn 2s forwards;
@@ -226,7 +185,8 @@ nav{
       display: flex;
       align-items: baseline;
       position: relative;
-    }        
+    }  
+          
 
 @keyframes mainBlock {
 0% {
@@ -274,13 +234,13 @@ nav{
 
 .main-message p{
     font-family: bold;
-    font-size: 1rem;
-    line-height: 16px;
+    font-size: 1.8rem;
+    line-height: 25px;
    /* text-transform: lowercase;*/
 }
 .btn{
     font-family: bold;
-    background-color: rgb(119, 86, 48);
+    background-color: rgb(42, 129, 50);
     border-radius: 2rem;
     font-size: 14px;
     color: #fafafa;
@@ -291,445 +251,15 @@ nav{
     transition: background-color 650ms;
 }
 .btn:hover{
-    background-color: rgb(88, 63, 35);
+    background-color:  rgb(21, 70, 26);
 }
-
-/*-------------------
-
-  section 2 curent project
-
---------------------*/
-
-
-.curent-project{
-    max-width: 98%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    font-family: bold;
-}
-.container1{
-    max-width: 300px;
-}
-.project-head{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.project-head h1{
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 2.5rem;
-    color: black;
-    
-}
-.head-line{    
-    margin: 2rem 0;
-    height: 2px;
-    width: 20rem;   
-    background-color: rgb(119, 86, 48);
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }*/
-  
-  /* Caption text */
-  /*.text {
-    color: #f2f2f2;
-    background-color: chocolate;
-    display: block;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }*/
-  
-
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    background-color: rgb(119, 86, 48);
-    position: absolute;
-    top: 0;
-    z-index: 111111;
-  }
-  
- 
-  .dot {
-    cursor: pointer;
-    height: 5px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: rgb(128, 95, 56);
-  }
-  
-
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-
-.project-descriptin{
-    padding: 2rem 1rem;
-    
-}
-.project-descriptin h3{
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-.project-descriptin h4{
-    font-size: 1.8rem;
-    padding: 1rem 0;
-}
-.project-descriptin ul{
-    font-size: 1.5rem;
-    list-style-type: initial;
-    padding-left: 13px;
-    line-height: 30px;
-    color: rgb(105, 105, 105);
-}
-
-/*-------------------
-
-  section 3 all project
-
---------------------*/
-/*
-.project{
-    margin-top: 4rem;
-    padding: 4rem 0;
-    background-color: rgb(238, 238, 238);
-}
-.pro img{
-    width: 100%;
-}
-.pro h4{
-    width: 100%;
-    background:linear-gradient(30deg,#ffffff00 30%,rgb(119, 86, 48) 30.3%);
-    text-align: right;
-    color: white;
-    font-size: 1rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: -4px;
-    margin-bottom: 1.5rem;
-}
-.middle{
-  display: none;
-}
-.img-top{
-    display: none;
-}*/
-/*-------------------
-
-  section 3 home plan*
-
---------------------*/
-
-.home-plan{
-  margin: 6rem 0;
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home{
-  margin: 4rem 0;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center;
-  justify-content: center;
-}
-
-.home-plan-1-section{
-  display: flex;
-  flex-direction: column;
-
-}
-.home-plan-2-section{
-  margin-top: -3.5px;
-  display: flex;
-  flex-direction: column;
-}
-.living{
-  height: 280px;
-  width: 160px;
-}
-
-.enter{
-  height: 50px;
-  width: 160px;
-  margin-top: -11px;
-}
-.badroom-1{
-  width: 130px;
-  height: 130px;
-  margin-top: -6px;
-}
-.bathroom{
-  width: 130px;
-  height: 70px;
-  margin-top: -5px;
-}
-.badroom-2{
-  width: 130px;
-  height: 90px;
-  margin-top: -5px;
-}
-.kibe{
-  width: 130px;
-  height: 30px;  
-  margin-top: -5px;
-}
-
-.room-description div{
-  display: none;
-}
-
-
-/* for hovers */
 
 
 
 /*-------------------
 
-  section 4 story*
+  section about us & sevices
 
 --------------------*/
 
-.story{
-    position: relative;
-    background: linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), 
-    url("../image/projeqt2/4.jpg") center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 
-}
-.section-story{
-    padding: 6rem 0;
-    max-width: 95%;
-    margin: auto;
-    color: blanchedalmond;
-    text-align: center;
-}
-.story-head h1{
-    font-size: 2.5rem;
-    color: blanchedalmond;
-}
-.fa-users, .fa-clock, .fa-handshake{
-    font-size: 80px;
-    padding-bottom: 30px;
-    color: rgb(207, 162, 107);
-}
-.story-des li{
-    padding: 3rem 0;
-    line-height: 25px;
-}
-.story-des div h1{
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-.story-des li h3{
-    font-size: 16px;
-    padding-bottom: 10px;
-}
-.story-des li p{
-    font-family: normal;
-    font-size: 14px;
-}
-/*-------------------
-
-  section 5 contact
-
---------------------*/
-.contact-information{
-    background-color: rgb(207, 162, 107);
-}
-
-.contact p{
-    text-align: center;
-    color: blanchedalmond;
-    font-size: 3rem;
-}
-.contact p:first-child{ 
-    padding: 5rem 0;
-    font-family: sans-serif;
-}
-.contact p:last-child{
-    padding: 0 0 5rem 0;
-}
-
-/*-------------------
-
-  section about us
-
---------------------*/
-
-.us{
-  background: linear-gradient(rgb(207, 162, 107), rgb(218, 218, 218));
-}
-.about-us{
-  max-width: 98%;
-  margin: auto;
-  padding-bottom: 5rem;
-}
-.about-us{
-  font-family: bold;
-  text-align: center;
-}
-.about-us p{
-  font-size: 15px;
-  line-height: 22px;
-}
-
-/*-------------------
-
-  section 6 gallery
-
---------------------*/
-.section-gallery{
-    display: none;
-}
-
-/*-------------------
-
-  section 7 footer
-
---------------------*/
-
-footer{
-    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93));
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
-    color: blanchedalmond;
-    
-}
-.footer-icon{
-    padding: 4rem 0;
-}
-.footer-icon i{
-    padding: 0 10px;
-    font-size: 2rem;
-    color:blanchedalmond;
-}
-.footer p{
-    font-family: normal;
-    font-size: 1rem;
-}
-.me{
-    color: rgb(207, 162, 107);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-#page-wrap {
-  margin: auto;
-  max-width: 800px;
-  padding: 50px;
-}
-h1 {
-  font-size: 30px;
-}
-
-#back2Top {
-  width: 40px;
-  line-height: 50px;
-  overflow: hidden;
-  z-index: 999;
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  color: #555;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: none;
- border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-#back2Top{
-  background-color: rgb(119, 86, 48);
-  color: #fafafa;
-}
-#back2Top:hover {
-  background-color:#f2f2f2;
-  color: rgb(119, 86, 48);
-}

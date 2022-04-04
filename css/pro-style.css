@@ -44,11 +44,12 @@ h1, h2, h3, h4{
 .hero{
     width: 100%;
     height: 80vh;
-    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/2.jpg") center no-repeat;
+    background:  linear-gradient(rgba(20, 37, 56, 0.93), rgba(0, 0, 0, 0.93)), url("../image/projeqt1/4.jpg") center no-repeat;
     background-size: cover;
     position: relative;
     height: 45vh;
 }
+
 .pro-head{
     height: 45vh;
 }
@@ -88,12 +89,19 @@ h1, h2, h3, h4{
 .lazy-show{
     width: 320px;
     height: auto;
-
+    
 }
 .container-2 {
     position: relative;    
 }
-  
+.container-2 p{
+   font-family: normal;
+   font-size: 1rem;
+    padding: 8px 8px;
+    overflow: hidden;   
+    color: rgb(119, 86, 48);
+}
+ 
 .lazy-show{
    height: auto;
    margin-bottom: 30px;
@@ -104,7 +112,7 @@ h1, h2, h3, h4{
     bottom: 50%; /* mnishvnelovani */
     left: 0;
     right: 0;
-    background-color: rgba(119, 86, 48, 0.781);
+    background:  linear-gradient(rgba(119, 86, 48, 0.692), rgb(70, 50, 27)) ;
     overflow: hidden;   
     height: 0;
     transition: .5s ease;
@@ -117,6 +125,12 @@ h1, h2, h3, h4{
     height: 100%;
 }
 
+.container-2 p{
+    margin-top: -35px;
+    margin-bottom: 20px;
+    color: ivory;
+    background:  linear-gradient(150deg, rgb(70, 50, 27), rgba(119, 86, 48, 0.692)) ;
+}
   
 .text-2 {
     font-family: normal;
@@ -196,4 +210,18 @@ footer{
         width: 320px;
         margin-bottom: 0px;
      }
+     .architeqt, .building {  
+         display: flex; 
+         flex-direction: row; 
+         flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .container-2 p{
+        margin-top: 0;
+        margin-bottom: 0px;
+        
+    }
+  
+
 }
